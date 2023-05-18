@@ -1,0 +1,14 @@
+name: Just to check time
+
+on:
+  workflow_call:
+
+jobs:
+  sample-shared-lib:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Print Date
+        run: echo 'Date is :' ; date
